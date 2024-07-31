@@ -1,0 +1,436 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    overflow: hidden;
+
+}
+
+#mainFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 87vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+
+}
+
+#containerMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30vw;
+    height: 60vh;
+
+}
+
+#SearchBox {
+    position: inherit;
+    color: white;
+    width: 500px;
+    height: 50px;
+    padding: 0 0 0 20px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    backdrop-filter: blur(5px);
+    background-color: #676767bd;
+    box-shadow: inset 0px 0px 7px 3px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#SearchBox:focus-visible {
+    background-color: #606060b3;
+    outline: none;
+}
+
+#btnSearch {
+    border: none;
+    border-radius: 0 25px 25px 0;
+    width: 50px;
+    height: 50px;
+    backdrop-filter: blur(5px);
+
+    background-color: #676767bd;
+    position: relative;
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#SearchBox:hover {
+    background-color: #606060b3;
+}
+
+#SearchBox::placeholder {
+    color: white;
+}
+
+#btnSearch:hover {
+    border: none;
+    border-radius: 0 25px 25px 0;
+    width: 50px;
+    height: 50px;
+    background-color: #606060b3;
+    position: relative;
+}
+
+#icon-Search {
+    width: 25px;
+    height: 25px;
+
+}
+
+#schForm {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+
+.time-weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 50px;
+    height: 234px;
+    width: 200px;
+    flex-direction: column;
+
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border: 5px solid white;
+    border-radius: 50%;
+    box-shadow:0px 0px 10px 1px rgba(0, 0, 0, 0.50);
+}
+
+.centre {
+    display: flex;
+    z-index: 6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hand {
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    width: 4px;
+    height: var(--height);
+    bottom: 50%;
+    transform-origin: 50% 100%;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.50);
+    transition: transform 0.5s ease-in-out;
+}
+.digiTime{
+    top: -63px;
+    z-index: 2;
+    color: white;
+    text-shadow: 0px 0px 4px #000000;
+    position: relative;
+}
+.clockNum {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    z-index: 2;
+}
+.clockBg {
+    position: relative;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    backdrop-filter: blur(15px);
+}
+.clockNum span {
+    font-size: 30px;
+  font-weight: 400;
+  position: absolute;
+  text-align: center;
+  transform: rotate(calc(90deg * var(--i)));
+  inset: -15px;
+  color: white;
+  text-shadow: 0px 0px 4px #000000;
+
+}
+
+
+#navBar {
+    position: static;
+    height: 20px;
+    width: 100vw;
+}
+
+#linkslist {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    right: 17px;
+}
+.appsIcon{
+    fill: #3a3838;
+    
+}
+.appsIcon:hover{
+    fill:  #777;;
+}
+#profileIcon{
+    border-radius: 25px;
+}
+#profileIcon:hover{
+    border-radius: 25px;
+    cursor: pointer;
+}
+#profileIcon:focus-visible{
+    border-radius: 25px;
+    box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+.link{
+    text-decoration: none;
+    color: #888888;
+}
+.link:hover {
+    text-decoration: none;
+    color: #0000008c;
+}
+li {
+    margin: 0 15px 0 15px;
+}
+ul {
+    list-style-type: none;
+}
+#icon-btn{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+
+#image-download-button{
+    width: 88px;
+    height: 37px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+#image-download-button:hover{
+    width: 88px;
+    height: 37px;
+    background-color: #d2d2d2;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+#download-link{
+    color: #555;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}.footer{
+    height: 80px;
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.credits {
+    padding: 10px;
+
+    display: flex;
+}
+
+img#creditsAvatar {
+    position: relative;
+    border-radius: 25px;
+}
+p.creditsName {
+    position: relative;
+    color: white;
+    left: 10px;
+}
+p.creditsName:hover{
+    color: rgb(148, 148, 148);
+}
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.pfp-img {
+    position: relative;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+
+.pfp-img.active{
+    width: 100px;
+    height: 100px;
+}
+
+.pallete {
+    position: relative;
+    display: flex;
+    height: 300px;
+    justify-content: flex-end;
+    padding: 10px;
+
+
+}
+
+.accountInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4d4d4d;
+    height: 300px;
+    width: 200px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+    position: relative;
+    right: 17px;
+}
+
+.accountInfo.active {
+    height: 400px;
+    width: 300px;
+    opacity: 1;
+}
+
+.infoContent {
+    height: 198px;
+  width: 157px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+
+}
+
+.infoContent.active {
+    opacity: 1;
+    height: 200px;
+    width: 215px;
+}
+
+.accountInfo::before {
+    position: absolute;
+    content: '';
+    height: 25px;
+    width: 25px;
+    background-color: #4d4d4d;
+    border-radius: 3px;
+    bottom: 279px;
+    left: 170px;
+    rotate: 45deg;
+    transition: 0.5s;
+}
+.accountInfo.active::before{
+    bottom: 379px;
+    left: 266px;
+}
+
+.accountInfo span {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #bcbcbc;
+}
+
+.accountManage {
+    height: 30px;
+    width: 141px;
+    border-radius: 25px;
+    background-color: rgba(128, 128, 128, 0.479);
+    transition: 0.5s;
+}
+.accountManage.active{
+    height: 37px;
+    width: 199px;
+}
+.accountManage.active:hover{
+    background-color: rgba(160, 159, 159, 0.479) ;
+}
+
+.manageAccount-txt{
+    padding: 2px;
+    color: #ffffff;
+    font-size: 9px;
+    transition: 0.5s;
+}
+.manageAccount-txt.active{
+    font-size: 13px;
+}
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.images.hovered{
+    background-color: #4d4d4d42;
+}
+
+.images::before{
+    content: url('../img/edit_icon.svg');
+    cursor: pointer;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    filter: opacity(0.5);
+    position: absolute;
+    z-index: 5;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.images.hovered::before{
+    display:flex;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="{% static 'img/icon.png' %}">
+
+
+</head>
+
+<body>
+    <header id="navBar">
+        <ul id="linkslist">
+            <li>
+                <div><button id="image-download-button"> <a href="" id="download-link" download=""><span> Download
+                            </span></a></button>
+            </li>
+            <li><a class="link" href="https://gmail.com/">Gmail</a></li>
+            <li><a class="link" href="https://unsplash.com/">Unsplash</a></li>
+            <li><a href="#"><svg class="appsIcon" xmlns="http://www.w3.org/2000/svg" height="30px"
+                        viewBox="0 -960 960 960" width="30px" fill="#e8eaed">
+                        <path
+                            d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z" />
+                    </svg></a></li>
+            <div id="icon-btn" type="button"><img
+                    src="https://static.vecteezy.com/system/resources/previews/024/293/032/non_2x/illustration-of-user-icon-in-gray-color-vector.jpg"
+                    id="profileIcon" alt="" height="40px" width="40px">
+            </div>
+
+        </ul>
+        <div class="pallete">
+            <div class="topRight">
+                <div class="accountInfo">
+                    <div class="infoContent">
+                        <div class="images" onmouseover="hover()" onmouseleave="nohover()"><img class="pfp-img"
+                                src="https://www.shareicon.net/data/512x512/2016/09/15/829459_man_512x512.png" alt="">
+                        </div>
+                        <span> Your Name </span>
+                        <button class="accountManage"><a class="manageAccount-txt" href=""> Manage Your Google Account
+                            </a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    </div>
+    <div id="mainFlex">
+        <div id="containerMain">
+            <div class="time-weather">
+                <div class="time">  
+                    <div class="clockBg"></div>
+                    <div class="clockNum">
+                        <span style="--i:1;"><b>.</b></span>
+                        <span style="--i:2;"><b>.</b></span>
+                        <span style="--i:3;"><b>.</b></span>
+                        <span style="--i:4;"><b>.</b></span>
+                    </div>
+                    <div class="centre"></div>
+                    <div class="hand" id="sec" style="--height: 80px; z-index: 2;"></div>
+                    <div class=" hand" id="min" style="--height: 70px; z-index: 3;"></div>
+                    <div class="hand" id="hour" style="--height: 60px; z-index: 4;"></div>
+                </div>
+                <div class="digiClock"></div>
+            </div>
+            <div class="weather"></div>
+            <form action="https://www.google.com/search" method="GET" id=schForm>
+                <input type="text" name="q" id="SearchBox" placeholder="Enter your query here..." autocomplete="off">
+                <button type="submit" id="btnSearch">
+                    <?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" id="icon-Search"
+                        data-name="Слой 1" viewBox="0 0 649.1 627.95">
+                        <defs>
+                            <style>
+                                .cls-1,
+                                .cls-2,
+                                .cls-3,
+                                .cls-4,
+                                .cls-5,
+                                .cls-6 {
+                                    fill: none;
+                                    stroke-miterlimit: 10;
+                                }
+
+                                .cls-1 {
+                                    stroke: #000;
+                                    stroke-width: 29px;
+                                }
+
+                                .cls-2 {
+                                    stroke: #39b54a;
+                                }
+
+                                .cls-2,
+                                .cls-3,
+                                .cls-4,
+                                .cls-5 {
+                                    stroke-width: 49px;
+                                }
+
+                                .cls-3 {
+                                    stroke: #fbb03b;
+                                }
+
+                                .cls-4 {
+                                    stroke: #ed1c24;
+                                }
+
+                                .cls-5,
+                                .cls-6 {
+                                    stroke: #0071bc;
+                                }
+
+                                .cls-6 {
+                                    stroke-width: 59px;
+                                }
+                            </style>
+                        </defs>
+                        <circle class="cls-1" cx="224.8" cy="224.58" r="200"></circle>
+                        <path class="cls-2" d="M932.2,600.37c-110.45,0-200-89.54-200-200"
+                            transform="translate(-707.7 -175.92)"></path>
+                        <path class="cls-3" d="M732.2,400.42c0-110.46,89.55-200,200-200"
+                            transform="translate(-707.7 -175.92)"></path>
+                        <path class="cls-4" d="M932.16,200.42c110.46,0,200,89.54,200,200"
+                            transform="translate(-707.7 -175.92)"></path>
+                        <path class="cls-5" d="M1132.16,400.37c0,110.46-89.54,200-200,200"
+                            transform="translate(-707.7 -175.92)"></path>
+                        <line class="cls-6" x1="364.98" y1="366.76" x2="629.3" y2="606.08"></line>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="bottom-left">
+            <div class="credits">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
