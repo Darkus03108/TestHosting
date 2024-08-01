@@ -146,7 +146,7 @@ body {
 }
 .digiTime{
     top: -63px;
-    z-index: 2;
+    z-index: 5;
     color: white;
     text-shadow: 0px 0px 4px #000000;
     position: relative;
@@ -179,7 +179,6 @@ body {
   text-shadow: 0px 0px 4px #000000;
 
 }
-
 
 #navBar {
     position: static;
@@ -418,7 +417,7 @@ p.creditsName:hover{
 }
 
 .images::before{
-    content: url('../img/edit_icon.svg');
+    content: url('../TestHosting/img/edit_icon.svg');
     cursor: pointer;
     background-color: black;
     width: 100px;
