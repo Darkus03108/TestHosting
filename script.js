@@ -1,4 +1,4 @@
-const apiKey = '-H4NPAMWXj05O1ViSwfoQIYi3WCMd6XdZcWcs0DSSho'; // Replace with your Unsplash API access key
+const apiKey = "-H4NPAMWXj05O1ViSwfoQIYi3WCMd6XdZcWcs0DSSho"; 
 
 async function fetchRandomImage() {
     try {
@@ -63,6 +63,7 @@ setInterval(setClock, 1000);
 setInterval(digiClock, 1000);
 digiClock();
 setClock();
+
 document.querySelector("#icon-btn").onclick = function(){
     document.querySelector(".accountInfo").classList.toggle('active');
     document.querySelector(".infoContent").classList.toggle('active');
